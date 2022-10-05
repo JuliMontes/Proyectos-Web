@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fepco</title>
+
+  <link rel="stylesheet" href="./css/sidemenu.css">
+  
+</head>
+<body>
+  <nav id="sidemenu" class="menu-collapsed">
+    <!-- Header-->
+    <section id="header">
+      <div id="title"><span>Fepco</span></div>
+      <div id="menu-btn">
+        <div class="btn-hamburger"></div>
+        <div class="btn-hamburger"></div>
+        <div class="btn-hamburger"></div>
+      </div>
+    </section>
+
+    <!--Profile-->
+    <section id="profile">
+      <div id="photo">
+        <img src="./images/profile.jpg" alt="Profile">
+      </div>
+      <div id="name"><span>Melina Moon</span></div>
+    </section>
+
+    <!--Items-->
+    <section id="menu-items">
+      <article class="item">
+        <a href="#">
+          <div class="icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="title">
+            <span>Inspección</span>
+          </div>
+        </a>
+      </article>
+
+      <div class="item separator"></div>
+
+      <article class="item">
+        <a href="#">
+          <div class="icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="title">
+            <span>Inspección</span>
+          </div>
+        </a>
+      </article>
+
+      <div class="item separator"></div>
+
+    </section>
+
+  </nav>
+
+  <section class="main-container">
+    <p>Contenido</p>
+  </section>
+
+  <script src="https://kit.fontawesome.com/e12e193cb7.js" crossorigin="anonymous"></script>
+
+  <script>
+    const btn = document.querySelector('#menu-btn');
+    const menu = document.querySelector('#sidemenu');
+
+    btn.addEventListener('click', e => {
+      menu.classList.toggle("menu-expanded");
+      menu.classList.toggle("menu-collapsed");
+
+      document.querySelector('body').classList.toggle('body-expanded');
+    });
+  </script>
+
+</body>
+</html>
