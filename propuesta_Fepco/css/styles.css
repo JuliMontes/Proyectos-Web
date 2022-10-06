@@ -1,0 +1,45 @@
+/*------------------------------------------------------------
+# General
+------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --bodyBackground: hsl(220, 100%, 98%);
+    --bodyColor: hsl(0, 0%, 27%);
+    --aColor: hsl(234, 86%, 60%);
+    --aColorHover: hsl(234, 87%, 70%);
+
+    --bodyBg: hsl(0, 0%, 96%);
+    --aColor2: hsl(0, 100%, 42%);
+    --aColorHover2: hsl(9, 100%, 60%);
+    --grisTransparente: hsl(206, 7%, 54%);
+    --grisMedio: hsl(214, 3%, 49%);
+    --grisOscuro: hsl(216, 14%, 21%);
+    --gris2: hsl(0, 0%, 7%);
+    --gris3: hsl(0, 0%, 13%);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--bodyBg);
+    color: var(--bodyColor);
+}
+
+a {
+    color: var(--aColor2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--aColorHover2);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+}
